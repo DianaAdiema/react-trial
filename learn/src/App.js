@@ -62,10 +62,10 @@ class App extends Component {
     return (
       <div className="App">
       <div className='content'>
-      <h1 > Todo List </h1>
+      <h1 > Todo Lists </h1>
          
           <input onChange={ (e)=>this.handleChange(e.target.value) } value={this.state.value}   type='text'/>
-          <button onClick = { (e) => this.addTodo(this.state.value)}>Add to List</button>
+          <button onClick = { (e) => this.addTodo(this.state.value)}>Click to Add</button>
           <ul>
             {this.state.list.map( (val) => <li> {val} </li>)}
           </ul>
